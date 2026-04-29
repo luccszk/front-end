@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha do Fogaça - Curso com Henrique Fogaça</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Cozinha do Fogaça</h1>
+            <p>Aprenda a cozinhar como um chef premiado</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container flex-container">
+                
+                <!-- Coluna Esquerda: Texto e Formulário -->
+                <div class="left-column">
+                    <h2>Transforme sua paixão em profissão</h2>
+                    <p class="subtitle">Curso completo de culinária com o chef <strong>Henrique Fogaça</strong></p>
+                    
+                    <ul class="benefits">
+                        <li>Técnicas profissionais de cozinha</li>
+                        <li>Mais de 50 receitas exclusivas</li>
+                        <li>Aulas ao vivo + gravadas</li>
+                        <li>Certificado de conclusão</li>
+                        <li>Suporte direto com a equipe do chef</li>
+                    </ul>
+
+                    <form id="lead-form" action="#" method="POST">
+                        <h3>Inscreva-se agora e garanta sua vaga!</h3>
+                        
+                        <div class="form-group">
+                            <input type="text" id="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="telefone" placeholder="(11) 98765-4321" required>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Quero me inscrever</button>
+                    </form>
+                </div>
+
+                <!-- Coluna Direita: Imagem -->
+                <div class="right-column">
+                    <img src="foigaçakirk.png" 
+                         alt="Chef Henrique Fogaça ensinando culinária" 
+                         class="chef-image">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cozinha do Fogaça - Curso Oficial do Chef Henrique Fogaça</p>
+            <p>Desenvolvido para fins educacionais</p>
+        </div>
+    </footer>
+
+    <script>
+        // Formulário funcional (simulação)
+        document.getElementById('lead-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Inscrição realizada com sucesso! Em breve entraremos em contato.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
